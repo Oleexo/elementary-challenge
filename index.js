@@ -7,8 +7,6 @@ var endDate = new Date(2017, 6, 8, 23, 59, 59, 99);
 var startDate = new Date(2017, 6, 8, 0, 0, 0, 0);
 if (new Date() > endDate) {
     app.use(express.static('public/past'))
-} else if(new Date() < startDate) {
-    app.use(express.static('public/futur'))
 } else {
     app.use(express.static('public'))
 
